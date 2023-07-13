@@ -1,4 +1,4 @@
-# Searching: getElement*, querySelector*
+# جستجو: getElement* , querySelector*
 
 DOM navigation properties are great when elements are close to each other. What if they are not? How to get an arbitrary element of the page?
 
