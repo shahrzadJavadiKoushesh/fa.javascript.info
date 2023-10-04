@@ -1,28 +1,28 @@
 
-# URL objects
+# اشیای لینک
 
-The built-in [URL](https://url.spec.whatwg.org/#api) class provides a convenient interface for creating and parsing URLs.
+کلاس داخلی [URL](https://url.spec.whatwg.org/#api) یک رابط کاربری مناسب برای ایجاد و parse کردن لینک‌ها فراهم می‌کند.
 
-There are no networking methods that require exactly a `URL` object, strings are good enough. So technically we don't have to use `URL`. But sometimes it can be really helpful.
+هیچ روش شبکه‌ای وجود ندارد که دقیقا به یک شی `URL` نیاز داشته باشد، رشته‌ها به اندازه‌ی کافی خوب هستند. بنابراین از نظر فنی ما مجبور نیستیم از `URL` استفاده کنیم. اما گاهی می‌تواند واقعا کمک‌کننده باشد.
 
-## Creating a URL
+## ایجاد یک لینک
 
-The syntax to create a new `URL` object:
+نحوه‌ی ایجاد یک شی `URL` جدید:
 
 ```js
 new URL(url, [base])
 ```
 
-- **`url`** -- the full URL or only path (if base is set, see below),
-- **`base`** -- an optional base URL: if set and `url` argument has only path, then the URL is generated relative to `base`.
+- **`url`** -- URL کامل یا تنها مسیر (اگر پایه تنظیم شده است، به زیر مراجعه کنید)،
+- **`base`** -- یک URL پایه‌ی اختیاری: اگر set و آرگومان `url` فقط مسیر داشته باشند، URL نسبت به `base` ایجاد می‌شود.
 
-For example:
+برای مثال:
 
 ```js
 let url = new URL('https://javascript.info/profile/admin');
 ```
 
-These two URLs are same:
+این دو لینک یکسان هستند:
 
 ```js run
 let url1 = new URL('https://javascript.info/profile/admin');
