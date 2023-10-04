@@ -41,7 +41,7 @@ let newUrl = new URL('tester', url);
 alert(newUrl); // https://javascript.info/profile/tester
 ```
 
-The `URL` object immediately allows us to access its components, so it's a nice way to parse the url, e.g.:
+شی `URL` بلافاصله به ما اجازه می‌دهد که به componentهای آن دسترسی داشته باشیم. پس این راه خوبی برای parse کردن یک لینک است. برای مثال:
 
 ```js run
 let url = new URL('https://javascript.info/url');
@@ -51,15 +51,15 @@ alert(url.host);     // javascript.info
 alert(url.pathname); // /url
 ```
 
-Here's the cheatsheet for URL components:
+این برگه‌ی تقلب برای URL componentها است.
 
 ![](url-object.svg)
 
-- `href` is the full url, same as `url.toString()`
-- `protocol` ends with the colon character `:`
-- `search` - a string of parameters, starts with the question mark `?`
-- `hash` starts with the hash character `#`
-- there may be also `user` and `password` properties if HTTP authentication is present: `http://login:password@site.com` (not painted above, rarely used).
+- `href` لینک کامل است، مثل همان `url.toString()`
+- `protocol` با کاراکتر دونقطه تمام می‌شود `:` 
+- `search` - رشته‌ای از پارامترها، با علامت سوال آغاز می‌شود `?`
+- `hash` با کاراکتر hash آغاز می‌شود `#`
+- همچنین اگر احراز هویت HTTP وجود داشته باشد، ممکن است propertyهای `user` و `password` نیز وجود داشته باشند:‌ `http://login:password@site.com` (در بالا نمایش داده نشده، به ندرت استفاده می‌شود).
 
 
 ```smart header="We can pass `URL` objects to networking (and most other) methods instead of a string"
